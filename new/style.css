@@ -1,0 +1,276 @@
+#header{
+border: 1px solid black;
+margin: 10px;
+padding: 5px;
+background-color: rgb(126, 123, 118);
+display: flex;
+justify-content: center
+}
+#header button{
+    border-radius: 10px;
+    
+    font-weight: 900;
+    padding: 20px;
+    background: rgb(189, 14, 14);
+    margin: 10px;
+    cursor: pointer;
+}
+#header button:hover{
+    transform: scale(1.1);
+    background: rgb(223, 206, 206);
+}
+#breadcrumb{
+border: 2px solid black;
+margin: 10px;
+background-color: burlywood;
+display: flex;
+}
+#breadcrumb a {
+    background-color: rgb(102, 209, 31);
+    padding: 10px;
+    cursor: pointer;
+    border-right: 5px solid black;
+}
+#breadcrumb a:hover{
+    background-color:rgb(117, 77, 156);
+    text-decoration: underline;
+
+}
+#container{
+border: 3px solid black;
+margin: 10px;
+display: flex;
+background-color: rgb(160, 181, 199);
+padding: 3px;
+}
+
+.folder {
+    background-color: teal;
+    color:rgb(27, 3, 3);
+    height: 120px;
+    border-radius: 10px;
+    width: 150px;
+    font-size: x-large;
+    border :2px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.folder div[purpose=name]{
+    margin-top: 40px;
+}
+.folder [action]{
+    cursor: pointer;
+}
+.folder [action]:hover{
+text-decoration: underline;
+color: blue;
+
+}
+
+
+.text-file {
+    background-color: rgb(236, 73, 215);
+    color:rgb(151, 27, 27);
+    height: 120px;
+    border-radius: 10px;
+    width: 150px;
+    font-size: x-large;
+    border :2px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.text-file div[purpose=name]{
+    margin-top: 40px;
+}
+.text-file [action]{
+    cursor: pointer;
+}
+.text-file [action]:hover{
+text-decoration: underline;
+color: blue;
+transform: scale(1.2);
+
+}
+
+.album {
+    background-color: rgb(236, 152, 73);
+    color:rgb(151, 27, 27);
+    height: 120px;
+    border-radius: 10px;
+    width: 150px;
+    font-size: x-large;
+    border :2px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.album div[purpose=name]{
+    margin-top: 40px;
+}
+.album [action]{
+    cursor: pointer;
+}
+.album [action]:hover{
+text-decoration: underline;
+color: blue;
+transform: scale(1.2);
+
+}
+
+#app{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+#app-title-bar{
+    display: flex;
+    background-color: rgb(189, 183, 201);
+    height:40px ;
+    vertical-align: bottom;
+}
+#app-title{
+    width: 96%;
+    text-align: center;
+    font-size: xx-large;
+    border-right: 5px solid red;
+  
+   
+}
+#app-menu-bar{
+    display: flex;
+    background-color: rgb(115, 233, 241);
+    height: 40px;
+    cursor: pointer;    
+    
+}
+#app-body{
+    display: flex;
+    background-color: rgb(94, 194, 111);
+    height: 500px;
+}
+.notepad-body{
+    height: 100%;
+    width: 100%;
+}
+.notepad-body textarea{
+    height: 100%;
+    width: 100%;
+}
+.notepad-menu *{
+    margin: 0px 5px;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.notepad-menu span{
+    vertical-align: bottom ;
+ 
+}
+.notepad-menu span:hover{
+    background-color: rgb(190, 154, 154);
+    transform: scale(1.1);
+}
+.notepad-menu input[type=color] {
+    width: 30px;
+}
+.notepad-menu select{
+    height: 30px;
+}
+.notepad-menu [pressed=true ]
+{
+    background-color: rgb(190, 154, 154);
+    transform: scale(1.1);
+}
+a[purpose= download]{
+    display: none;
+}
+
+#win-action span{
+    cursor: pointer;
+
+}
+#win-action span:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+
+.notepad-menu input[action = upload]{
+    display: none;
+}
+
+.album-menu *{
+    margin: 5px 5px;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(250, 225, 225);
+
+}
+.album-menu span:hover{
+    background-color: rgb(119, 70, 70);
+    transform: scale(1.1);
+}
+.album-body{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+.picture-list{
+    border: 2px solid black;
+    height: 100px;
+    border-right: 5px;
+    margin: 5px;
+    /* padding: 5px; */
+    display: flex;
+}
+.picture-list img {
+    border: 2px solid black;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+.picture-list img:hover{
+    transform: scale(1.1);
+    border: 2px solid blueviolet;
+   
+} 
+.picture-view{
+    border: 2px solid black;
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.picture-view > div{
+    height: 100%;
+    border: 2px solid wheat;
+
+}
+.picture-view .move-left{
+    width: 15%;
+}
+
+.picture-view .picture-main{
+    /* padding: 5px; */
+    margin: 5px;
+    height: 100%;
+    width: 90%;
+    object-fit: fill;
+    display: flex;
+}
+
+.picture-view .move-right{
+    width: 15%;
+}
+
+.picture-list img[pressed =true]{
+    transform: scale(1.2);
+    border: blueviolet;
+
+}
